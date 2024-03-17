@@ -395,14 +395,17 @@ span {
   display: grid;
   grid-template-rows: auto 1fr;
 }
+
 .btn-container {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
 }
 .tab-btn:nth-child(1) {
   border-top-left-radius: var(--radius);
+  
 }
 .tab-btn:nth-child(3) {
   border-top-right-radius: var(--radius);
@@ -421,6 +424,8 @@ span {
 .tab-btn:hover:not(.active) {
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
+box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+font-size: 1rem;
 }
 .about-content {
   border-bottom-left-radius: var(--radius);
