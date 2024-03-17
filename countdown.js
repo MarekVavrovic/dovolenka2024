@@ -43,6 +43,5 @@ function calculateTimeLeft(futureDate, items, deadline) {
   });
 }
 
-// Start countdowns
 updateCountdowns();
 setInterval(updateCountdowns, 1000);
