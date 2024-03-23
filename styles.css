@@ -309,9 +309,13 @@ span {
   color: green;
   font-size: 3rem;
   position: absolute;
-  bottom: 135px;
-  left: 17px;
+  bottom: 133px;
+  left: 19px;
   cursor: pointer;
+
+}
+.notification:hover{
+  scale: 1.1;
 }
 /* MODAL */
 #modalText {
@@ -418,7 +422,7 @@ span {
 }
 .tab-btn {
   padding: 1rem 0;
-  border: none;
+
   text-transform: capitalize;
   font-size: 1rem;
   display: block;
@@ -430,7 +434,9 @@ span {
 .tab-btn:hover:not(.active) {
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border: 0.5px rgb(7, 174, 224);
+  border-style: groove;
 font-size: 1rem;
 }
 
@@ -527,6 +533,7 @@ font-size: 1rem;
     object-fit: cover;
     padding-top: 10px;
     border-bottom-left-radius: 15px;
+    box-shadow: rgb(41, 41, 40) 0px 20px 30px -10px;
   }
   .card:hover {
     transform: translateZ(-160px) rotateY(-90deg);
