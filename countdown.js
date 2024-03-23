@@ -2,7 +2,8 @@
 const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
-
+const countDownTitle = document.querySelector(".count-down-title");
+const btns = document.querySelectorAll(".tab-btn");
 
 const countdowns = {
   april: new Date(2024,3, 9, 23, 15, 11),
@@ -34,7 +35,8 @@ function calculateTimeLeft(futureDate, items, deadline) {
   );
 
   if (t < 0) {
-    deadline.innerHTML = `<h4 class="expired bold">Odpocitavanie bolo ukoncene</h4>`;
+    deadline.innerHTML = `<h4 class="expired"></h4>`;
+    countDownTitle.style.visibility="hidden"
     return; 
   }
 
